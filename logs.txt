@@ -29,3 +29,6 @@ main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
 main - INFO - getFolder {'path': '/2F1ZEQ/', 'auth': None, 'password': 'Azuba@89'}
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/2F1ZEQ/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/TGL90W/', 'auth': None, 'password': 'Azuba@89'}

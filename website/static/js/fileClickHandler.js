@@ -10,14 +10,16 @@ function setupClickHandlers() {
     // Setup event listeners for folders
     const folderElements = document.querySelectorAll('.grid-item.folder');
     folderElements.forEach(folder => {
-        folder.removeEventListener(openEvent, openFolder); // Remove existing event to prevent duplicates
+        folder.removeEventListener('dblclick', openFolder); // Remove existing dblclick event to prevent duplicates
+        folder.removeEventListener('click', openFolder); // Remove existing click event to prevent duplicates
         folder.addEventListener(openEvent, openFolder);
     });
 
     // Setup event listeners for files
     const fileElements = document.querySelectorAll('.grid-item.file');
     fileElements.forEach(file => {
-        file.removeEventListener(openEvent, openFile); // Remove existing event to prevent duplicates
+        file.removeEventListener('dblclick', openFile); // Remove existing dblclick event to prevent duplicates
+        file.removeEventListener('click', openFile); // Remove existing click event to prevent duplicates
         file.addEventListener(openEvent, openFile);
     });
 }
