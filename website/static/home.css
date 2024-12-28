@@ -719,22 +719,46 @@
     }
 
     .sidebar {
-        width: 100%; /* Full width sidebar */
-        padding: 10px; /* Reduced padding */
+        position: fixed; /* Make sidebar fixed on top */
+        width: 100%; /* Full width */
+        height: 60px; /* Reduce height */
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Space out elements */
+        padding: 0 10px;
+        background-color: #f8fafd; /* Consistent with the design */
+        border-bottom: 1px solid #ccc; /* Add a subtle border */
+        z-index: 1000; /* Ensure it's above other content */
     }
 
     .main-content {
-        padding: 10px; /* Reduced padding */
+        margin-top: 60px; /* Push down content below the fixed sidebar */
     }
 
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Fewer columns for files and folders */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .grid-item {
+        flex-direction: column; /* Stack image and text vertically */
+    }
+
+    .item-preview {
+        width: 100%; /* Full width images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .item-details {
+        padding: 8px; /* Reduce padding */
     }
 
     .new-upload, .more-options, .create-new-folder, .file-uploader {
-        width: 90%; /* Make modals responsive */
+        position: fixed;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
+        width: 90%; /* Use more screen width */
+        max-width: none; /* Override max-width */
     }
 }
 
@@ -743,4 +767,16 @@
     .grid-container {
         grid-template-columns: 1fr; /* Single column for very small screens */
     }
+}
+
+/* Adjust button sizes and interactions */
+.button, .more-btn {
+    padding: 12px; /* Larger touch targets */
+    font-size: 16px; /* Larger font for readability */
+}
+
+/* Improve form elements for touch interactions */
+input[type="text"], input[type="password"], button {
+    height: 44px; /* Easier to interact with on touch devices */
+    font-size: 16px; /* Larger font size */
 }

@@ -5,22 +5,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function setupClickHandlers() {
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
-    const openEvent = isMobile ? 'click' : 'dblclick';
+    const openEvent = 'click'; // Use click for both mobile and desktop for simplicity
 
-    // Setup event listeners for folders
-    const folderElements = document.querySelectorAll('.grid-item.folder');
-    folderElements.forEach(folder => {
-        folder.removeEventListener('dblclick', openFolder); // Remove existing dblclick event to prevent duplicates
-        folder.removeEventListener('click', openFolder); // Remove existing click event to prevent duplicates
-        folder.addEventListener(openEvent, openFolder);
-    });
+    document.querySelectorAll('.grid-item.folder, .grid-item.file').forEach(item => {
+        item.removeEventListener('dblclick', openFolder); // Clean up previous event listeners
+        item.removeEventListener('click', openFolder);
+        item.removeEventListener('dblclick', openFile);
+        item.removeEventListener('click', openFile);
 
-    // Setup event listeners for files
-    const fileElements = document.querySelectorAll('.grid-item.file');
-    fileElements.forEach(file => {
-        file.removeEventListener('dblclick', openFile); // Remove existing dblclick event to prevent duplicates
-        file.removeEventListener('click', openFile); // Remove existing click event to prevent duplicates
-        file.addEventListener(openEvent, openFile);
+        item.addEventListener(openEvent, function() {
+            if (this.classList.contains('folder')) {
+                openFolder.call(this);
+            } else if (this.classList.contains('file')) {
+                openFile.call(this);
+            }
+        });
     });
 }
 
