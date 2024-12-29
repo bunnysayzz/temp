@@ -1044,3 +1044,13 @@ input[type="text"], input[type="password"], button {
         transform: scale(0.95);
     }
 }
+
+/* Add to the existing .sidebar-menu styles */
+.sidebar-menu a#logout-btn {
+    margin-top: auto;  /* This will push the logout to the bottom */
+    color: #d93025;    /* Red color for logout */
+}
+
+.sidebar-menu a#logout-btn:hover {
+    background-color: rgba(217, 48, 37, 0.1);
+}
