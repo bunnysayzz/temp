@@ -7,3 +7,442 @@ utils.directoryHandler - INFO - Drive data loaded from backup file from telegram
 utils.directoryHandler - INFO - Starting backup drive data task
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
 utils.directoryHandler - INFO - Backing up drive data to telegram
+main - INFO - getFolder {'path': '/TGL90W/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/T6L8SG/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/T6L8SG/', 'auth': None, 'password': 'Azuba@89'}
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 51] Network is unreachable
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+utils.uploader - INFO - Uploading file cache/GZNM0F.mp4 GZNM0F
+utils.uploader - INFO - Compressing video cache/GZNM0F.mp4
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+utils.directoryHandler - INFO - Creating new file 4FFA9A0E-DD30-4233-A1E4-B3FF8B940684.mp4 in /T6L8SG/
+utils.uploader - INFO - Uploaded file cache/GZNM0F.compressed.mp4 GZNM0F
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'GZNM0F', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+utils.uploader - INFO - Uploading file cache/AYTT2C.mp4 AYTT2C
+utils.uploader - INFO - Compressing video cache/AYTT2C.mp4
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+utils.directoryHandler - INFO - Backing up drive data to telegram
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+utils.directoryHandler - INFO - Creating new file 48A69989-15E7-44AC-B61C-B40483576959.mp4 in /T6L8SG/
+utils.uploader - INFO - Uploaded file cache/AYTT2C.compressed.mp4 AYTT2C
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'AYTT2C', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+utils.uploader - INFO - Uploading file cache/03U34W.mp4 03U34W
+utils.uploader - INFO - Compressing video cache/03U34W.mp4
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+utils.directoryHandler - INFO - Creating new file 6EC9DE7B-9855-4FEC-85F0-EFAD0C419BB9.mp4 in /T6L8SG/
+utils.uploader - INFO - Uploaded file cache/03U34W.compressed.mp4 03U34W
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': '03U34W', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+utils.uploader - INFO - Uploading file cache/BP5RBD.mp4 BP5RBD
+utils.uploader - INFO - Compressing video cache/BP5RBD.mp4
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+utils.directoryHandler - INFO - Backing up drive data to telegram
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+utils.directoryHandler - INFO - Creating new file 11919E1D-7828-47AD-AC7A-58B11DC148AB.mp4 in /T6L8SG/
+utils.uploader - INFO - Uploaded file cache/BP5RBD.compressed.mp4 BP5RBD
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'BP5RBD', 'password': 'Azuba@89'}
+utils.directoryHandler - INFO - Backing up drive data to telegram
