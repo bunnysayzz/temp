@@ -937,3 +937,110 @@ input[type="text"], input[type="password"], button {
     height: 16px;
     color: #444;
 }
+
+/* Media Modal Responsive Styles */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        padding: 45px 10px 10px 10px;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .media-container {
+        height: calc(100% - 45px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .media-container img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .media-container video {
+        width: 100%;
+        height: auto;
+        max-height: calc(100vh - 60px);
+    }
+
+    /* Adjust control buttons for mobile */
+    .close-modal,
+    .download-modal-btn {
+        width: 40px;
+        height: 40px;
+        top: 5px;
+    }
+
+    .close-modal {
+        right: 10px;
+    }
+
+    .download-modal-btn {
+        right: 60px;
+    }
+
+    .close-modal svg,
+    .download-modal-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Loading spinner adjustments for mobile */
+    .loading-spinner {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Error message adjustments for mobile */
+    .media-error {
+        width: 90%;
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+    .modal-content {
+        padding-top: 40px;
+    }
+
+    .close-modal,
+    .download-modal-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .download-modal-btn {
+        right: 50px;
+    }
+
+    .media-container {
+        height: calc(100% - 40px);
+    }
+}
+
+/* Touch-specific improvements */
+@media (hover: none) {
+    .close-modal,
+    .download-modal-btn {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .close-modal:active,
+    .download-modal-btn:active {
+        background: rgba(200, 200, 200, 0.9);
+        transform: scale(0.95);
+    }
+}

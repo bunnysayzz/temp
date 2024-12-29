@@ -56,6 +56,9 @@ function openMediaModal(path, fileName) {
     const container = modal.querySelector('.media-container');
     const isVideo = fileName.match(/\.(mp4|webm|mkv|mov|avi)$/i);
     
+    // Prevent body scrolling when modal is open
+    document.body.style.overflow = 'hidden';
+    
     // Clear previous content
     container.innerHTML = `
         <div class="loading-background"></div>
@@ -72,10 +75,20 @@ function openMediaModal(path, fileName) {
             <line x1="12" y1="15" x2="12" y2="3"/>
         </svg>
     `;
-    downloadBtn.onclick = () => downloadMedia(path, fileName);
-    modal.querySelector('.modal-content').appendChild(downloadBtn);
     
-    // Show modal with fade effect
+    // Add touch event handlers
+    downloadBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        downloadMedia(path, fileName);
+    });
+    downloadBtn.addEventListener('touchend', (e) => {
+        e.stopPropagation();
+        downloadMedia(path, fileName);
+    });
+    
+    modal.querySelector('.modal-content').appendChild(downloadBtn);
+
+    // Show modal
     modal.style.display = 'block';
     setTimeout(() => modal.style.opacity = '1', 10);
 
@@ -83,12 +96,12 @@ function openMediaModal(path, fileName) {
         const video = document.createElement('video');
         video.controls = true;
         video.autoplay = false;
+        video.playsInline = true; // Better mobile video handling
         video.classList.add('media-loading');
         
         video.onloadeddata = () => {
-            // Remove loading spinner and show video
-            container.querySelector('.loading-spinner').remove();
-            container.querySelector('.loading-background').remove();
+            container.querySelector('.loading-spinner')?.remove();
+            container.querySelector('.loading-background')?.remove();
             video.style.opacity = '1';
         };
 
@@ -103,9 +116,8 @@ function openMediaModal(path, fileName) {
         img.classList.add('media-loading');
         
         img.onload = () => {
-            // Remove loading spinner and show image
-            container.querySelector('.loading-spinner').remove();
-            container.querySelector('.loading-background').remove();
+            container.querySelector('.loading-spinner')?.remove();
+            container.querySelector('.loading-background')?.remove();
             img.style.opacity = '1';
         };
 
@@ -117,16 +129,24 @@ function openMediaModal(path, fileName) {
         container.appendChild(img);
     }
 
-    // Handle close button
+    // Update close handlers for better mobile support
     const closeBtn = modal.querySelector('.close-modal');
-    closeBtn.onclick = closeMediaModal;
-
-    // Close on outside click
-    modal.onclick = (e) => {
-        if (e.target === modal) {
-            closeMediaModal();
-        }
+    const closeModal = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        closeMediaModal();
     };
+    
+    closeBtn.addEventListener('click', closeModal);
+    closeBtn.addEventListener('touchend', closeModal);
+
+    // Close on outside click/touch
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeMediaModal();
+    });
+    modal.addEventListener('touchend', (e) => {
+        if (e.target === modal) closeMediaModal();
+    });
 
     // Handle escape key
     document.addEventListener('keydown', handleEscKey);
@@ -156,28 +176,26 @@ function closeMediaModal() {
     const modal = document.getElementById('mediaModal');
     const container = modal.querySelector('.media-container');
     
-    // Fade out effect
+    // Re-enable body scrolling
+    document.body.style.overflow = '';
+    
     modal.style.opacity = '0';
     
-    // Stop video if playing
     const video = container.querySelector('video');
     if (video) {
         video.pause();
         video.src = '';
     }
     
-    // Hide modal after fade
     setTimeout(() => {
         modal.style.display = 'none';
         container.innerHTML = '';
-        // Remove download button
         const downloadBtn = modal.querySelector('.download-modal-btn');
         if (downloadBtn) {
             downloadBtn.remove();
         }
     }, 300);
 
-    // Remove escape key handler
     document.removeEventListener('keydown', handleEscKey);
 }
 

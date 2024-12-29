@@ -36,3 +36,9 @@ utils.streamer.custom_dl - DEBUG - Using cached media session for DC 5
 utils.streamer.custom_dl - DEBUG - Finished yielding file with 3 parts.
 main - INFO - getFolder {'path': '/trash', 'auth': None, 'password': 'Azuba@89'}
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/T6L8SG/', 'auth': None, 'password': 'Azuba@89'}
+utils.streamer.custom_dl - DEBUG - Starting to yielding file with client.
+utils.streamer.custom_dl - DEBUG - Using cached media session for DC 5
+utils.streamer.custom_dl - DEBUG - Finished yielding file with 1 parts.
+main - INFO - getFolder {'path': '/trash', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
