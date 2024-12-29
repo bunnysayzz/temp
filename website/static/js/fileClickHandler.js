@@ -34,13 +34,157 @@ function openFolder() {
 
 function openFile() {
     const fileName = this.getAttribute('data-name').toLowerCase();
-    let path = '/file?path=' + this.getAttribute('data-path') + '/' + this.getAttribute('data-id');
+    const path = '/file?path=' + this.getAttribute('data-path') + '/' + this.getAttribute('data-id');
+    
+    // Check if file is media
+    if (isMediaFile(fileName)) {
+        openMediaModal(path, fileName);
+    } else {
+        window.open(path, '_blank');
+    }
+}
 
-    if (fileName.endsWith('.mp4') || fileName.endsWith('.mkv') || fileName.endsWith('.webm') || fileName.endsWith('.mov') || fileName.endsWith('.avi') || fileName.endsWith('.ts') || fileName.endsWith('.ogv')) {
-        path = '/stream?url=' + getRootUrl() + path;
+function isMediaFile(fileName) {
+    const imageExts = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+    const videoExts = ['.mp4', '.webm', '.mkv', '.mov', '.avi'];
+    
+    return [...imageExts, ...videoExts].some(ext => fileName.endsWith(ext));
+}
+
+function openMediaModal(path, fileName) {
+    const modal = document.getElementById('mediaModal');
+    const container = modal.querySelector('.media-container');
+    const isVideo = fileName.match(/\.(mp4|webm|mkv|mov|avi)$/i);
+    
+    // Clear previous content
+    container.innerHTML = `
+        <div class="loading-background"></div>
+        <div class="loading-spinner"></div>
+    `;
+    
+    // Add download button
+    const downloadBtn = document.createElement('div');
+    downloadBtn.className = 'download-modal-btn';
+    downloadBtn.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+    `;
+    downloadBtn.onclick = () => downloadMedia(path, fileName);
+    modal.querySelector('.modal-content').appendChild(downloadBtn);
+    
+    // Show modal with fade effect
+    modal.style.display = 'block';
+    setTimeout(() => modal.style.opacity = '1', 10);
+
+    if (isVideo) {
+        const video = document.createElement('video');
+        video.controls = true;
+        video.autoplay = false;
+        video.classList.add('media-loading');
+        
+        video.onloadeddata = () => {
+            // Remove loading spinner and show video
+            container.querySelector('.loading-spinner').remove();
+            container.querySelector('.loading-background').remove();
+            video.style.opacity = '1';
+        };
+
+        video.onerror = () => {
+            handleMediaError(container, 'Failed to load video');
+        };
+
+        video.src = path;
+        container.appendChild(video);
+    } else {
+        const img = document.createElement('img');
+        img.classList.add('media-loading');
+        
+        img.onload = () => {
+            // Remove loading spinner and show image
+            container.querySelector('.loading-spinner').remove();
+            container.querySelector('.loading-background').remove();
+            img.style.opacity = '1';
+        };
+
+        img.onerror = () => {
+            handleMediaError(container, 'Failed to load image');
+        };
+
+        img.src = path;
+        container.appendChild(img);
     }
 
-    window.open(path, '_blank');
+    // Handle close button
+    const closeBtn = modal.querySelector('.close-modal');
+    closeBtn.onclick = closeMediaModal;
+
+    // Close on outside click
+    modal.onclick = (e) => {
+        if (e.target === modal) {
+            closeMediaModal();
+        }
+    };
+
+    // Handle escape key
+    document.addEventListener('keydown', handleEscKey);
+}
+
+function handleMediaError(container, message) {
+    container.innerHTML = `
+        <div style="
+            text-align: center;
+            color: #dc3545;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1)
+        ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <p style="margin-top: 10px">${message}</p>
+        </div>
+    `;
+}
+
+function closeMediaModal() {
+    const modal = document.getElementById('mediaModal');
+    const container = modal.querySelector('.media-container');
+    
+    // Fade out effect
+    modal.style.opacity = '0';
+    
+    // Stop video if playing
+    const video = container.querySelector('video');
+    if (video) {
+        video.pause();
+        video.src = '';
+    }
+    
+    // Hide modal after fade
+    setTimeout(() => {
+        modal.style.display = 'none';
+        container.innerHTML = '';
+        // Remove download button
+        const downloadBtn = modal.querySelector('.download-modal-btn');
+        if (downloadBtn) {
+            downloadBtn.remove();
+        }
+    }, 300);
+
+    // Remove escape key handler
+    document.removeEventListener('keydown', handleEscKey);
+}
+
+function handleEscKey(e) {
+    if (e.key === 'Escape') {
+        closeMediaModal();
+    }
 }
 
 
@@ -236,3 +380,23 @@ async function shareFolder() {
 }
 
 // File More Button Handler  End
+
+// Add this new function for handling downloads
+function downloadMedia(path, fileName) {
+    // Create temporary link
+    const link = document.createElement('a');
+    link.href = path;
+    link.download = fileName; // Set suggested filename
+    
+    // Append to document temporarily
+    document.body.appendChild(link);
+    
+    // Show loading toast
+    showToast('Starting download...');
+    
+    // Trigger download
+    link.click();
+    
+    // Clean up
+    document.body.removeChild(link);
+}

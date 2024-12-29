@@ -6,29 +6,33 @@ utils.clients - INFO - Clients Initialized
 utils.directoryHandler - INFO - Drive data loaded from backup file from telegram
 utils.directoryHandler - INFO - Starting backup drive data task
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/T6L8SG/', 'auth': None, 'password': 'Azuba@89'}
+utils.directoryHandler - INFO - Backing up drive data to telegram
+utils.streamer.custom_dl - DEBUG - Starting to yielding file with client.
+utils.streamer.custom_dl - DEBUG - Created media session for DC 5
+utils.streamer.custom_dl - DEBUG - Finished yielding file with 3 parts.
+utils.streamer.custom_dl - DEBUG - Starting to yielding file with client.
+utils.streamer.custom_dl - DEBUG - Using cached media session for DC 5
+utils.streamer.custom_dl - DEBUG - Finished yielding file with 2 parts.
+utils.streamer.custom_dl - DEBUG - Starting to yielding file with client.
+utils.streamer.custom_dl - DEBUG - Using cached media session for DC 5
+utils.streamer.custom_dl - DEBUG - Finished yielding file with 2 parts.
+utils.streamer.custom_dl - DEBUG - Starting to yielding file with client.
+utils.streamer.custom_dl - DEBUG - Using cached media session for DC 5
+utils.streamer.custom_dl - DEBUG - Finished yielding file with 2 parts.
+utils.streamer.custom_dl - DEBUG - Starting to yielding file with client.
+utils.streamer.custom_dl - DEBUG - Using cached media session for DC 5
+utils.streamer.custom_dl - DEBUG - Starting to yielding file with client.
+utils.streamer.custom_dl - DEBUG - Using cached media session for DC 5
+utils.streamer.custom_dl - DEBUG - Finished yielding file with 2 parts.
+utils.streamer.custom_dl - DEBUG - Finished yielding file with 5 parts.
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/T6L8SG/', 'auth': None, 'password': 'Azuba@89'}
+utils.streamer.custom_dl - DEBUG - Starting to yielding file with client.
+utils.streamer.custom_dl - DEBUG - Using cached media session for DC 5
+utils.streamer.custom_dl - DEBUG - Finished yielding file with 3 parts.
+utils.streamer.custom_dl - DEBUG - Starting to yielding file with client.
+utils.streamer.custom_dl - DEBUG - Using cached media session for DC 5
+utils.streamer.custom_dl - DEBUG - Finished yielding file with 3 parts.
 main - INFO - getFolder {'path': '/trash', 'auth': None, 'password': 'Azuba@89'}
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/TGL90W/', 'auth': None, 'password': 'Azuba@89'}
-utils.directoryHandler - INFO - Backing up drive data to telegram
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/TGL90W/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/2F1ZEQ/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/2F1ZEQ/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/2F1ZEQ/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/2F1ZEQ/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/TGL90W/', 'auth': None, 'password': 'Azuba@89'}
