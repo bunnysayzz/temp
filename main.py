@@ -10,7 +10,7 @@ from fastapi import FastAPI, HTTPException, Request, File, UploadFile, Form, Res
 from fastapi.responses import FileResponse, JSONResponse
 from config import ADMIN_PASSWORD, MAX_FILE_SIZE, STORAGE_CHANNEL
 from utils.clients import initialize_clients
-from utils.directoryHandler import getRandomID, loadDriveData
+from utils.directoryHandler import getRandomID
 from utils.extra import auto_ping_website, convert_class_to_dict, reset_cache_dir
 from utils.streamer import media_streamer
 from utils.uploader import start_file_uploader
@@ -35,9 +35,6 @@ async def lifespan(app: FastAPI):
 
     # Add this line
     asyncio.create_task(cleanup_cache())
-
-    # Add periodic sync
-    asyncio.create_task(periodic_sync())
 
     yield
 
@@ -419,14 +416,3 @@ async def cleanup_cache():
             logger.error(f"Cache cleanup error: {e}")
             
         await asyncio.sleep(1800)  # Run every 30 minutes
-
-
-async def periodic_sync():
-    """Periodically check and reload drive data to ensure sync"""
-    while True:
-        try:
-            await loadDriveData()
-            logger.info("Completed periodic drive data sync")
-        except Exception as e:
-            logger.error(f"Failed periodic sync: {e}")
-        await asyncio.sleep(300)  # Check every 5 minutes

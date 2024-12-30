@@ -4,18 +4,12 @@ from pyrogram.types import InputMediaDocument
 import pickle, os, random, string, asyncio
 from utils.logger import Logger
 from datetime import datetime, timezone
-from typing import Optional
-import time
 
 logger = Logger(__name__)
 
 cache_dir = Path("./cache")
 cache_dir.mkdir(parents=True, exist_ok=True)
 drive_cache_path = cache_dir / "drive.data"
-
-LAST_BACKUP_TIME = 0
-BACKUP_COOLDOWN = 5  # Minimum seconds between backups
-BACKUP_LOCK = asyncio.Lock()
 
 
 def getRandomID():
@@ -266,54 +260,39 @@ BOT_MODE: NewBotMode = None
 
 # Function to backup the drive data to telegram
 async def backup_drive_data():
-    global DRIVE_DATA, LAST_BACKUP_TIME
+    global DRIVE_DATA
     logger.info("Starting backup drive data task")
 
     while True:
         try:
-            await asyncio.sleep(5)  # Check every 5 seconds instead of config.DATABASE_BACKUP_TIME
+            await asyncio.sleep(
+                config.DATABASE_BACKUP_TIME
+            )  # Backup the data every 24 hours
 
-            if not DRIVE_DATA.isUpdated:
+            if DRIVE_DATA.isUpdated == False:
                 continue
 
-            current_time = time.time()
-            if current_time - LAST_BACKUP_TIME < BACKUP_COOLDOWN:
-                continue
+            logger.info("Backing up drive data to telegram")
+            from utils.clients import get_client
 
-            async with BACKUP_LOCK:
-                logger.info("Backing up drive data to telegram")
-                from utils.clients import get_client
-
-                client = get_client()
-                time_text = f"📅 **Last Updated:** {get_current_utc_time()} (UTC +00:00)"
-                
-                try:
-                    msg = await client.edit_message_media(
-                        config.STORAGE_CHANNEL,
-                        config.DATABASE_BACKUP_MSG_ID,
-                        media=InputMediaDocument(
-                            drive_cache_path,
-                            caption=f"🔐 **TG Drive Data Backup File**\n\nDo not edit or delete this message. This is a backup file for the tg drive data.\n\n{time_text}",
-                        ),
-                        file_name="drive.data",
-                    )
-                    DRIVE_DATA.isUpdated = False
-                    LAST_BACKUP_TIME = current_time
-                    logger.info("Successfully backed up drive data")
-                    
-                    try:
-                        await msg.pin()
-                    except:
-                        pass
-                except Exception as e:
-                    logger.error(f"Failed to backup to Telegram: {e}")
-                    # Retry after 30 seconds on failure
-                    await asyncio.sleep(30)
-                    continue
-
+            client = get_client()
+            time_text = f"📅 **Last Updated :** {get_current_utc_time()} (UTC +00:00)"
+            msg = await client.edit_message_media(
+                config.STORAGE_CHANNEL,
+                config.DATABASE_BACKUP_MSG_ID,
+                media=InputMediaDocument(
+                    drive_cache_path,
+                    caption=f"🔐 **TG Drive Data Backup File**\n\nDo not edit or delete this message. This is a backup file for the tg drive data.\n\n{time_text}",
+                ),
+                file_name="drive.data",
+            )
+            DRIVE_DATA.isUpdated = False
+            try:
+                await msg.pin()
+            except:
+                pass
         except Exception as e:
-            logger.error(f"Backup Error: {str(e)}")
-            await asyncio.sleep(30)  # Wait before retrying on error
+            logger.error("Backup Error : " + str(e))
 
 
 async def init_drive_data():
@@ -340,73 +319,40 @@ async def init_drive_data():
 
 async def loadDriveData():
     global DRIVE_DATA, BOT_MODE
-    
-    max_retries = 3
-    retry_delay = 5  # seconds
-    
-    for attempt in range(max_retries):
+
+    # Checking if the backup file exists on telegram
+    from utils.clients import get_client
+
+    client = get_client()
+    try:
         try:
-            from utils.clients import get_client
-            client = get_client()
-
-            # Try to get the backup from Telegram
-            try:
-                msg = await client.get_messages(
-                    config.STORAGE_CHANNEL, config.DATABASE_BACKUP_MSG_ID
-                )
-                
-                if not msg or not msg.document or msg.document.file_name != "drive.data":
-                    raise Exception("Invalid or missing drive.data backup")
-                
-                dl_path = await msg.download()
-                
-                # Validate the downloaded file
-                if not os.path.exists(dl_path) or os.path.getsize(dl_path) == 0:
-                    raise Exception("Downloaded file is empty or missing")
-                
-                # Load and validate the data
-                with open(dl_path, "rb") as f:
-                    data = pickle.load(f)
-                    if not isinstance(data, NewDriveData):
-                        raise Exception("Invalid data format")
-                    
-                DRIVE_DATA = data
-                logger.info("Successfully loaded drive data from Telegram backup")
-                
-                # Copy to local cache for redundancy
-                DRIVE_DATA.save()
-                
-                break  # Success - exit retry loop
-                
-            except Exception as e:
-                logger.error(f"Failed to load from Telegram (attempt {attempt + 1}): {e}")
-                
-                # On final retry, try to load from local cache
-                if attempt == max_retries - 1:
-                    if os.path.exists(drive_cache_path):
-                        logger.info("Loading from local cache as fallback")
-                        with open(drive_cache_path, "rb") as f:
-                            DRIVE_DATA = pickle.load(f)
-                    else:
-                        logger.info("Creating new drive.data file")
-                        DRIVE_DATA = NewDriveData({"/": Folder("/", "/")}, [])
-                        DRIVE_DATA.save()
-                else:
-                    await asyncio.sleep(retry_delay)
-                    continue
-                    
+            msg = await client.get_messages(
+                config.STORAGE_CHANNEL, config.DATABASE_BACKUP_MSG_ID
+            )
         except Exception as e:
-            logger.error(f"Critical error loading drive data: {e}")
-            if attempt == max_retries - 1:
-                raise  # Re-raise on final attempt
-            await asyncio.sleep(retry_delay)
-            continue
+            logger.error(e)
+            raise Exception("Failed to get DATABASE_BACKUP_MSG_ID on telegram")
 
-    # Initialize any missing attributes
+        if msg.document.file_name == "drive.data":
+            dl_path = await msg.download()
+            with open(dl_path, "rb") as f:
+                DRIVE_DATA = pickle.load(f)
+
+            logger.info("Drive data loaded from backup file from telegram")
+        else:
+            raise Exception("Backup drive.data file not found on telegram")
+    except Exception as e:
+        logger.warning(e)
+        logger.info("Creating new drive.data file")
+        DRIVE_DATA = NewDriveData({"/": Folder("/", "/")}, [])
+        DRIVE_DATA.save()
+
+    # For updating the changes in already existing old backup drive.data file
     await init_drive_data()
 
-    # Start Bot Mode if configured
+    # Start Bot Mode
     if config.MAIN_BOT_TOKEN:
         from utils.bot_mode import start_bot_mode
+
         BOT_MODE = NewBotMode(DRIVE_DATA)
         await start_bot_mode(DRIVE_DATA, BOT_MODE)

@@ -3,19 +3,16 @@ utils.clients - INFO - Starting - Bot Client 1
 utils.clients - INFO - Started - Bot Client 1
 utils.clients - INFO - No Premium Clients Were Initialized
 utils.clients - INFO - Clients Initialized
-utils.directoryHandler - INFO - Successfully loaded drive data from Telegram backup
+utils.directoryHandler - INFO - Drive data loaded from backup file from telegram
 utils.directoryHandler - INFO - Starting backup drive data task
-utils.directoryHandler - INFO - Successfully loaded drive data from Telegram backup
-main - INFO - Completed periodic drive data sync
-utils.directoryHandler - INFO - Backing up drive data to telegram
-main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-utils.directoryHandler - INFO - Successfully backed up drive data
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
 main - INFO - getFolder {'path': '/Z6L31N/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/trash', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
 main - INFO - trashFileFolder {'path': '/Z6L31N', 'trash': True, 'password': 'Azuba@89'}
 utils.directoryHandler - INFO - Trashing /Z6L31N
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
 main - INFO - getFolder {'path': '/trash', 'auth': None, 'password': 'Azuba@89'}
 utils.directoryHandler - INFO - Backing up drive data to telegram
-utils.directoryHandler - INFO - Successfully backed up drive data
