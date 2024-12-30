@@ -416,3 +416,19 @@ async def cleanup_cache():
             logger.error(f"Cache cleanup error: {e}")
             
         await asyncio.sleep(1800)  # Run every 30 minutes
+
+
+@app.post("/api/syncDriveData")
+async def sync_drive_data(request: Request):
+    from utils.directoryHandler import loadDriveData
+    
+    data = await request.json()
+    if data.get("password") != ADMIN_PASSWORD:
+        return JSONResponse({"status": "Invalid password"})
+        
+    try:
+        await loadDriveData()
+        return JSONResponse({"status": "ok"})
+    except Exception as e:
+        logger.error(f"Failed to sync drive data: {str(e)}")
+        return JSONResponse({"status": "error", "message": str(e)})
