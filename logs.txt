@@ -19986,3 +19986,58 @@ pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too 
 pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
 pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
 pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 9 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 9 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 9 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 8 seconds
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 6 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 6 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 6 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 6 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 6 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 6 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 7 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 6 seconds
+pyrogram.session.session - WARNING - [pyroblack] Client [1] is reconnecting too frequently, sleeping for 6 seconds
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'B66OQM', 'password': 'Azuba@89'}
