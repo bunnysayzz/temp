@@ -21,17 +21,6 @@ document.getElementById('pass-login').addEventListener('click', async () => {
     const json = await postJson('/api/checkPassword', data)
     if (json.status === 'ok') {
         document.cookie = `admin_auth=${password};path=/;samesite=strict`;
-        
-        // Force sync after login
-        try {
-            const syncJson = await postJson('/api/syncDriveData', { password: password })
-            if (syncJson.status !== 'ok') {
-                console.error('Failed to sync drive data:', syncJson)
-            }
-        } catch (err) {
-            console.error('Error syncing drive data:', err)
-        }
-        
         window.location.reload()
     }
     else {
