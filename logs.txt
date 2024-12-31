@@ -3,22 +3,9 @@ utils.clients - INFO - Starting - Bot Client 1
 utils.clients - INFO - Started - Bot Client 1
 utils.clients - INFO - No Premium Clients Were Initialized
 utils.clients - INFO - Clients Initialized
-utils.directoryHandler - INFO - Successfully loaded drive data from Telegram backup
-utils.directoryHandler - INFO - Successfully saved drive data to local cache
+utils.directoryHandler - INFO - Drive data loaded from backup file from telegram
 utils.directoryHandler - INFO - Starting backup drive data task
-utils.directoryHandler - INFO - Backing up drive data to telegram
-utils.directoryHandler - INFO - Successfully backed up drive data to telegram
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - trashFileFolder {'path': '/RJWSEO', 'trash': True, 'password': 'Azuba@89'}
-utils.directoryHandler - INFO - Trashing /RJWSEO
-utils.directoryHandler - INFO - Successfully saved drive data to local cache
+main - INFO - getFolder {'path': '/RJWSEO/', 'auth': None, 'password': 'Azuba@89'}
 utils.directoryHandler - INFO - Backing up drive data to telegram
-utils.directoryHandler - INFO - Successfully backed up drive data to telegram
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/trash', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - trashFileFolder {'path': '/RJWSEO', 'trash': False, 'password': 'Azuba@89'}
-utils.directoryHandler - INFO - Trashing /RJWSEO
-utils.directoryHandler - INFO - Successfully saved drive data to local cache
-utils.directoryHandler - INFO - Backing up drive data to telegram
-utils.directoryHandler - INFO - Successfully backed up drive data to telegram
-main - INFO - getFolder {'path': '/trash', 'auth': None, 'password': 'Azuba@89'}
