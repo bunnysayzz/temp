@@ -67,10 +67,29 @@ class NewDriveData:
         self.isUpdated = False
 
     def save(self) -> None:
-        with open(drive_cache_path, "wb") as f:
-            pickle.dump(self, f)
-
-        self.isUpdated = True
+        try:
+            # First save to temporary file
+            temp_path = drive_cache_path.with_suffix('.temp')
+            with open(temp_path, "wb") as f:
+                pickle.dump(self, f)
+                f.flush()
+                os.fsync(f.fileno())  # Ensure data is written to disk
+                
+            # Then rename to actual file (atomic operation)
+            os.replace(temp_path, drive_cache_path)
+            
+            self.isUpdated = True
+            logger.info("Successfully saved drive data to local cache")
+            
+        except Exception as e:
+            logger.error(f"Error saving drive data: {str(e)}")
+            # Remove temporary file if it exists
+            try:
+                if temp_path.exists():
+                    temp_path.unlink()
+            except:
+                pass
+            raise
 
     def new_folder(self, path: str, name: str) -> None:
         logger.info(f"Creating new folder {name} in {path}")
@@ -265,11 +284,9 @@ async def backup_drive_data():
 
     while True:
         try:
-            await asyncio.sleep(
-                config.DATABASE_BACKUP_TIME
-            )  # Backup the data every 24 hours
+            await asyncio.sleep(5)  # Check more frequently - every 5 seconds
 
-            if DRIVE_DATA.isUpdated == False:
+            if not DRIVE_DATA.isUpdated:
                 continue
 
             logger.info("Backing up drive data to telegram")
@@ -277,22 +294,35 @@ async def backup_drive_data():
 
             client = get_client()
             time_text = f"📅 **Last Updated :** {get_current_utc_time()} (UTC +00:00)"
-            msg = await client.edit_message_media(
-                config.STORAGE_CHANNEL,
-                config.DATABASE_BACKUP_MSG_ID,
-                media=InputMediaDocument(
-                    drive_cache_path,
-                    caption=f"🔐 **TG Drive Data Backup File**\n\nDo not edit or delete this message. This is a backup file for the tg drive data.\n\n{time_text}",
-                ),
-                file_name="drive.data",
-            )
-            DRIVE_DATA.isUpdated = False
-            try:
-                await msg.pin()
-            except:
-                pass
+            
+            # Add retry mechanism for reliability
+            max_retries = 3
+            for attempt in range(max_retries):
+                try:
+                    msg = await client.edit_message_media(
+                        config.STORAGE_CHANNEL,
+                        config.DATABASE_BACKUP_MSG_ID,
+                        media=InputMediaDocument(
+                            drive_cache_path,
+                            caption=f"🔐 **TG Drive Data Backup File**\n\nDo not edit or delete this message. This is a backup file for the tg drive data.\n\n{time_text}",
+                        ),
+                        file_name="drive.data",
+                    )
+                    DRIVE_DATA.isUpdated = False
+                    try:
+                        await msg.pin()
+                    except:
+                        pass
+                    logger.info("Successfully backed up drive data to telegram")
+                    break
+                except Exception as e:
+                    if attempt == max_retries - 1:
+                        raise e
+                    await asyncio.sleep(1)
+                    
         except Exception as e:
-            logger.error("Backup Error : " + str(e))
+            logger.error(f"Backup Error : {str(e)}")
+            await asyncio.sleep(5)  # Short delay before retrying on error
 
 
 async def init_drive_data():
@@ -320,32 +350,43 @@ async def init_drive_data():
 async def loadDriveData():
     global DRIVE_DATA, BOT_MODE
 
-    # Checking if the backup file exists on telegram
     from utils.clients import get_client
-
     client = get_client()
-    try:
+
+    max_retries = 3
+    for attempt in range(max_retries):
         try:
             msg = await client.get_messages(
                 config.STORAGE_CHANNEL, config.DATABASE_BACKUP_MSG_ID
             )
-        except Exception as e:
-            logger.error(e)
-            raise Exception("Failed to get DATABASE_BACKUP_MSG_ID on telegram")
+            
+            if not msg or not msg.document or msg.document.file_name != "drive.data":
+                raise Exception("Invalid or missing drive.data backup on Telegram")
 
-        if msg.document.file_name == "drive.data":
-            dl_path = await msg.download()
+            # Download with timeout
+            dl_path = await asyncio.wait_for(
+                msg.download(),
+                timeout=30  # 30 second timeout
+            )
+
             with open(dl_path, "rb") as f:
                 DRIVE_DATA = pickle.load(f)
 
-            logger.info("Drive data loaded from backup file from telegram")
-        else:
-            raise Exception("Backup drive.data file not found on telegram")
-    except Exception as e:
-        logger.warning(e)
-        logger.info("Creating new drive.data file")
-        DRIVE_DATA = NewDriveData({"/": Folder("/", "/")}, [])
-        DRIVE_DATA.save()
+            logger.info("Successfully loaded drive data from Telegram backup")
+            break
+
+        except asyncio.TimeoutError:
+            logger.error(f"Timeout downloading drive.data (attempt {attempt + 1}/{max_retries})")
+            if attempt == max_retries - 1:
+                raise Exception("Failed to download drive.data after multiple attempts")
+
+        except Exception as e:
+            logger.error(f"Error loading drive.data (attempt {attempt + 1}/{max_retries}): {str(e)}")
+            if attempt == max_retries - 1:
+                logger.warning("Creating new drive.data file")
+                DRIVE_DATA = NewDriveData({"/": Folder("/", "/")}, [])
+                DRIVE_DATA.save()
+            await asyncio.sleep(1)
 
     # For updating the changes in already existing old backup drive.data file
     await init_drive_data()
@@ -353,6 +394,5 @@ async def loadDriveData():
     # Start Bot Mode
     if config.MAIN_BOT_TOKEN:
         from utils.bot_mode import start_bot_mode
-
         BOT_MODE = NewBotMode(DRIVE_DATA)
         await start_bot_mode(DRIVE_DATA, BOT_MODE)
