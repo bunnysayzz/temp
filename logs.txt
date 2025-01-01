@@ -6,6 +6,32 @@ utils.clients - INFO - Clients Initialized
 utils.directoryHandler - INFO - Drive data loaded from backup file from telegram
 utils.directoryHandler - INFO - Starting backup drive data task
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
-main - INFO - getFolder {'path': '/RJWSEO/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+utils.thumbnail - ERROR - Failed to process image: [Errno 2] No such file or directory: '/Users/mdazharuddin/Library/Python/3.11/bin/downloads/JQ7Y3I.jpg.temp'
+utils.thumbnail - ERROR - Failed to process image: [Errno 2] No such file or directory: '/Users/mdazharuddin/Library/Python/3.11/bin/downloads/WNL967.jpg.temp'
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/trash', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'FWOYK2', 'password': 'Azuba@89'}
+utils.uploader - INFO - Uploading file cache/FWOYK2.jpg FWOYK2
+main - INFO - getUploadProgress {'id': 'FWOYK2', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'FWOYK2', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'FWOYK2', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'FWOYK2', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'FWOYK2', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'FWOYK2', 'password': 'Azuba@89'}
+utils.directoryHandler - INFO - Creating new file Snapchat-1969440072.jpg in /
+utils.uploader - INFO - Uploaded file cache/FWOYK2.jpg FWOYK2
+main - INFO - getUploadProgress {'id': 'FWOYK2', 'password': 'Azuba@89'}
+main - INFO - getUploadProgress {'id': 'FWOYK2', 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/trash', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+utils.thumbnail - ERROR - Failed to process image: [Errno 2] No such file or directory: '/Users/mdazharuddin/Library/Python/3.11/bin/downloads/WNL967.jpg.temp'
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
 utils.directoryHandler - INFO - Backing up drive data to telegram
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
+main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
 main - INFO - getFolder {'path': '/', 'auth': None, 'password': 'Azuba@89'}
